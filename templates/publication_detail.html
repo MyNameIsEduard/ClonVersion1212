@@ -6,7 +6,7 @@
 <p>{{ publication.author }}</p>
 <p>{{ publication.body }}</p>
 
-<a href="{% url 'publication_update' publication.pk %}">Edit</a>
-
+<a href="{% url 'publication_update' publication.pk %}">Edit</a> 
+<a href="{% url 'publication_delete' publication.pk %}">Delete</a> 
 
 {% endblock content %}
